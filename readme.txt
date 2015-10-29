@@ -4,7 +4,7 @@ Donate link:
 Tags: woocommerce, payment, ecommerce, mobile-payment, line-pay
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 0.3.4
+Stable tag: 0.3.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -78,6 +78,9 @@ to LINE Pay's support team. The plugin's author does not offer support about
 the service.
 
 == Changelog ==
+
+= 0.3.5 =
+* Added a check for WooCommerce during plugin activation.
 
 = 0.3.4 =
 * Bumped version in all affected files.
