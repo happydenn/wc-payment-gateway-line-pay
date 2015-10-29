@@ -1,4 +1,4 @@
-# WooCommerce LINE Pay Gateway
+# LINE Pay Gateway for WooCommerce
 
 This plugin can quickly add [LINE Pay](http://line.me/en/pay) to your WooCommerce powered e-commerce site!
 
