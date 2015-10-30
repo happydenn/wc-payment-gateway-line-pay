@@ -101,7 +101,7 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
 
         $product_name = $item_name;
         if ( $item_count > 1 ) {
-            $product_name .= printf(
+            $product_name .= sprintf(
                 __( ' and %s others', 'wc-payment-gateway-line-pay' ),
                 $item_count - 1
             );
@@ -119,7 +119,7 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
 
         if ( $response_data->returnCode != '0000' ) {
             throw new Exception(
-                printf(
+                sprintf(
                     __( 'Incorrect parameters were passed during checkout. Please contact site administrator. Return code: %s', 'wc-payment-gateway-line-pay' ),
                     $response_data->returnCode
                 )
@@ -159,7 +159,7 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
         if ( $response_data->returnCode != '0000' ) {
             $order->update_status(
                 'failed',
-                printf(
+                sprintf(
                     __( 'Error return code: %1$s, message: %2$s', 'wc-payment-gateway-line-pay' ),
                     $response_data->returnCode,
                     $response_data->returnMessage
