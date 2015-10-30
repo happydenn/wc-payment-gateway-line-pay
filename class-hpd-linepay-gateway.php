@@ -9,8 +9,8 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
         $this->id = 'hpd_linepay';
         $this->icon = plugin_dir_url( __FILE__ ) . 'assets/linepay_logo_74x24.png';
         $this->has_fields = false;
-        $this->method_title = 'LINE Pay';
-        $this->method_description = '使用 LINE Pay 進行付款';
+        $this->method_title = __( 'LINE Pay', 'wc-payment-gateway-line-pay' );
+        $this->method_description = __( 'Accept payments using LINE Pay.', 'wc-payment-gateway-line-pay' );
         $this->supports = array( 'products', 'refunds' );
 
         $this->init_form_fields();
@@ -43,39 +43,39 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
     public function init_form_fields() {
         $this->form_fields = array(
             'enabled' => array(
-                'title' => '啟用',
+                'title' => __( 'Enable', 'wc-payment-gateway-line-pay' ),
                 'type' => 'checkbox',
             ),
             'title' => array(
-                'title' => '標題',
+                'title' => __( 'Title', 'wc-payment-gateway-line-pay' ),
                 'default' => 'LINE Pay',
             ),
             'channelId' => array(
-                'title' => 'Channel ID',
+                'title' => __( 'Channel ID', 'wc-payment-gateway-line-pay' ),
             ),
             'channelSecret' => array(
-                'title' => 'Channel Secret Key',
+                'title' => __( 'Channel Secret Key', 'wc-payment-gateway-line-pay' ),
             ),
             'sandboxMode' => array(
-                'title' => '使用Sandbox模式',
+                'title' => __( 'Run in Sandbox mode', 'wc-payment-gateway-line-pay' ),
                 'type' => 'checkbox',
             ),
             'productImageUrl' => array(
-                'title' => '結帳圖檔URL',
-                'description' => '顯示於付款畫面上的影像 URL (建議大小 84x84)',
+                'title' => __( 'Product Image URL', 'wc-payment-gateway-line-pay' ),
+                'description' => __( 'URL to the image that is shown on LINE Pay payment interface. (Best size: 84x84)', 'wc-payment-gateway-line-pay' ),
             ),
             'langCd' => array(
-                'title' => '付款頁面語言',
-                'description' => 'LINE Pay等待付款頁面的語言',
+                'title' => __( 'Payment UI Language', 'wc-payment-gateway-line-pay' ),
+                'description' => __( 'Language used in the LINE Pay payment interface.', 'wc-payment-gateway-line-pay' ),
                 'type' => 'select',
                 'options' => array(
-                    '' => '自動選擇',
-                    'zh-Hant' => '繁體中文',
-                    'zh-Hans' => '簡體中文',
-                    'ja' => '日文',
-                    'en' => '英文',
-                    'ko' => '韓文',
-                    'th' => '泰文',
+                    '' => __( 'Auto detect', 'wc-payment-gateway-line-pay' ),
+                    'zh-Hant' => __( 'Traditional Chinese (Taiwan)', 'wc-payment-gateway-line-pay' ),
+                    'zh-Hans' => __( 'Simplified Chinese', 'wc-payment-gateway-line-pay' ),
+                    'ja' => __( 'Japanese', 'wc-payment-gateway-line-pay' ),
+                    'en' => __( 'English', 'wc-payment-gateway-line-pay' ),
+                    'ko' => __( 'Korean', 'wc-payment-gateway-line-pay' ),
+                    'th' => __( 'Thai', 'wc-payment-gateway-line-pay' ),
                 ),
             ),
         );
@@ -87,7 +87,7 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
 
     public function process_payment( $order_id ) {
         if ( !$this->is_currency_supported() ) {
-            throw new Exception( 'LINE Pay並不接受目前所使用的幣值' );
+            throw new Exception( __( 'You cannot use this currency with LINE Pay.', 'wc-payment-gateway-line-pay' ) );
         }
 
         $order = new WC_Order( $order_id );
@@ -101,7 +101,10 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
 
         $product_name = $item_name;
         if ( $item_count > 1 ) {
-            $product_name .= ' 和另外 ' . ( $item_count - 1 ) . ' 件商品';
+            $product_name .= printf(
+                __( ' and %s others', 'wc-payment-gateway-line-pay' ),
+                $item_count - 1
+            );
         }
 
         $response_data = $this->client->reserve(
@@ -115,7 +118,12 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
             $this->get_option( 'langCd' ) );
 
         if ( $response_data->returnCode != '0000' ) {
-            throw new Exception( '結帳參數有誤，請聯絡網站管理員。錯誤代碼: ' . $response_data->returnCode );
+            throw new Exception(
+                printf(
+                    __( 'Incorrect parameters were passed during checkout. Please contact site administrator. Return code: %s', 'wc-payment-gateway-line-pay' ),
+                    $response_data->returnCode
+                )
+            );
         }
 
         update_post_meta( $order_id, '_hpd_linepay_transactionId', $response_data->info->transactionId );
@@ -149,7 +157,14 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
         $response_data = $this->client->confirm( $transaction_id, $order->get_total(), get_woocommerce_currency() );
 
         if ( $response_data->returnCode != '0000' ) {
-            $order->update_status( 'failed', "錯誤代碼: $response_data->returnCode, 錯誤訊息: $response_data->returnMessage" );
+            $order->update_status(
+                'failed',
+                printf(
+                    __( 'Error return code: %1$s, message: %2$s', 'wc-payment-gateway-line-pay' ),
+                    $response_data->returnCode,
+                    $response_data->returnMessage
+                )
+            );
         } else {
             $order->payment_complete();
         }

@@ -6,6 +6,10 @@
  * Version: 0.3.5
  * Author: Denny Tsai
  * Author URI: http://hpd.io/
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+ * Text Domain: wc-payment-gateway-line-pay
+ * Domain Path: /languages
  */
 
 if ( !defined( 'ABSPATH' ) ) { exit; }
@@ -38,5 +42,11 @@ function hpd_init_linepay_gateway_class() {
 }
 
 function hpd_linepay_gateway_woocommerce_error() {
-    echo '<div class="error"><p>本外掛需要先啟用 WooCommerce 之後再啟用！</p></div>';
+    echo '<div class="error"><p>' . __( 'LINE Pay Gateway plugin requires WooCommerce to be activated.', 'wc-payment-gateway-line-pay' ) . '</p></div>';
+}
+
+add_action( 'plugins_loaded', 'hpd_linepay_load_plugin_textdomain' );
+
+function hpd_linepay_load_plugin_textdomain() {
+    load_plugin_textdomain( 'wc-payment-gateway-line-pay', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
