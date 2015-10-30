@@ -1,0 +1,130 @@
+# Copyright (C) 2015 LINE Pay Gateway for WooCommerce
+# This file is distributed under the same license as the LINE Pay Gateway for WooCommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-payment-"
+"gateway-line-pay\n"
+"POT-Creation-Date: 2015-10-30 23:12:22+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-hpd-linepay-gateway.php:12
+msgid "LINE Pay"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:13
+msgid "Accept payments using LINE Pay."
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:46
+msgid "Enable"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:50
+msgid "Title"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:54
+msgid "Channel ID"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:57
+msgid "Channel Secret Key"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:60
+msgid "Run in Sandbox mode"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:64
+msgid "Product Image URL"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:65
+msgid ""
+"URL to the image that is shown on LINE Pay payment interface. (Best size: "
+"84x84)"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:68
+msgid "Payment UI Language"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:69
+msgid "Language used in the LINE Pay payment interface."
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:72
+msgid "Auto detect"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:73
+msgid "Traditional Chinese (Taiwan)"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:74
+msgid "Simplified Chinese"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:75
+msgid "Japanese"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:76
+msgid "English"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:77
+msgid "Korean"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:78
+msgid "Thai"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:90
+msgid "You cannot use this currency with LINE Pay."
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:105
+msgid " and %s others"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:123
+msgid ""
+"Incorrect parameters were passed during checkout. Please contact site "
+"administrator. Return code: %s"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:163
+msgid "Error return code: %1$s, message: %2$s"
+msgstr ""
+
+#: wc-payment-gateway-line-pay.php:45
+msgid "LINE Pay Gateway plugin requires WooCommerce to be activated."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "LINE Pay Gateway for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wc-payment-gateway-line-pay/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "讓 WooCommerce 可以支援使用 LINE Pay 進行結帳！"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Denny Tsai"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://hpd.io/"
+msgstr ""
