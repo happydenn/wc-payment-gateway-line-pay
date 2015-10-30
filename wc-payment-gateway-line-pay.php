@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: LINE Pay Gateway for WooCommerce
- * Plugin URI: http://hpd.io
+ * Plugin URI: https://wordpress.org/plugins/wc-payment-gateway-line-pay/
  * Description: 讓 WooCommerce 可以支援使用 LINE Pay 進行結帳！
  * Version: 0.3.5
  * Author: Denny Tsai
- * Author URI: http://hpd.io
+ * Author URI: http://hpd.io/
  */
 
 if ( !defined( 'ABSPATH' ) ) { exit; }
