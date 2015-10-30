@@ -4,7 +4,7 @@ Donate link:
 Tags: woocommerce, payment, ecommerce, mobile-payment, line-pay
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 0.3.5
+Stable tag: 0.4.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -33,13 +33,13 @@ The plugin has the following features:
 
 This plugin supports automatic refunds from WooCommerce Order backend.
 
-Currently only available in Traditional Chinese. A translation compatible
-version is coming.
+Translations are welcomed! Currently available in English and Traditional
+Chinese.
 
 Follow the development of this plugin on
 [GitHub](https://github.com/happydenn/wc-payment-gateway-line-pay).
 
-= Traditional Chinese =
+= 繁體中文 =
 
 使用本外掛可以為您的 WooCommerce 電子商務網站輕鬆快速地加上
 [LINE Pay](http://line.me/zh-hant/pay) 的收款方式。
@@ -78,6 +78,9 @@ to LINE Pay's support team. The plugin's author does not offer support about
 the service.
 
 == Changelog ==
+
+= 0.4.0 =
+* Make the plugin i18n capable.
 
 = 0.3.5 =
 * Added a check for WooCommerce during plugin activation.

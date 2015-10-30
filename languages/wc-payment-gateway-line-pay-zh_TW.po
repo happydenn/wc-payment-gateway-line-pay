@@ -5,126 +5,129 @@ msgstr ""
 "Project-Id-Version: LINE Pay Gateway for WooCommerce 0.3.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-payment-"
 "gateway-line-pay\n"
-"POT-Creation-Date: 2015-10-30 23:21:51+00:00\n"
+"POT-Creation-Date: 2015-10-31 07:22+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-10-31 07:29+0800\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
 
 #: class-hpd-linepay-gateway.php:12
 msgid "LINE Pay"
-msgstr ""
+msgstr "LINE Pay"
 
 #: class-hpd-linepay-gateway.php:13
 msgid "Accept payments using LINE Pay."
-msgstr ""
+msgstr "使用 LINE Pay 進行付款"
 
 #: class-hpd-linepay-gateway.php:46
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 #: class-hpd-linepay-gateway.php:50
 msgid "Title"
-msgstr ""
+msgstr "標題"
 
 #: class-hpd-linepay-gateway.php:54
 msgid "Channel ID"
-msgstr ""
+msgstr "Channel ID"
 
 #: class-hpd-linepay-gateway.php:57
 msgid "Channel Secret Key"
-msgstr ""
+msgstr "Channel Secret Key"
 
 #: class-hpd-linepay-gateway.php:60
 msgid "Run in Sandbox mode"
-msgstr ""
+msgstr "使用Sandbox模式"
 
 #: class-hpd-linepay-gateway.php:64
 msgid "Product Image URL"
-msgstr ""
+msgstr "結帳圖檔網址"
 
 #: class-hpd-linepay-gateway.php:65
 msgid ""
 "URL to the image that is shown on LINE Pay payment interface. (Best size: "
 "84x84)"
-msgstr ""
+msgstr "顯示於付款畫面上的影像 URL (建議大小 84x84)"
 
 #: class-hpd-linepay-gateway.php:68
 msgid "Payment UI Language"
-msgstr ""
+msgstr "付款頁面語言"
 
 #: class-hpd-linepay-gateway.php:69
 msgid "Language used in the LINE Pay payment interface."
-msgstr ""
+msgstr "LINE Pay等待付款頁面的語言"
 
 #: class-hpd-linepay-gateway.php:72
 msgid "Auto detect"
-msgstr ""
+msgstr "自動選擇"
 
 #: class-hpd-linepay-gateway.php:73
 msgid "Traditional Chinese (Taiwan)"
-msgstr ""
+msgstr "繁體中文"
 
 #: class-hpd-linepay-gateway.php:74
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "簡體中文"
 
 #: class-hpd-linepay-gateway.php:75
 msgid "Japanese"
-msgstr ""
+msgstr "日文"
 
 #: class-hpd-linepay-gateway.php:76
 msgid "English"
-msgstr ""
+msgstr "英文"
 
 #: class-hpd-linepay-gateway.php:77
 msgid "Korean"
-msgstr ""
+msgstr "韓文"
 
 #: class-hpd-linepay-gateway.php:78
 msgid "Thai"
-msgstr ""
+msgstr "泰文"
 
 #: class-hpd-linepay-gateway.php:90
 msgid "You cannot use this currency with LINE Pay."
-msgstr ""
+msgstr "LINE Pay並不接受目前所使用的幣值。"
 
 #: class-hpd-linepay-gateway.php:105
 msgid " and %s others"
-msgstr ""
+msgstr " 和另外 %s 件商品"
 
 #: class-hpd-linepay-gateway.php:123
 msgid ""
 "Incorrect parameters were passed during checkout. Please contact site "
 "administrator. Return code: %s"
-msgstr ""
+msgstr "結帳參數有誤，請聯絡網站管理員。錯誤代碼: %s"
 
 #: class-hpd-linepay-gateway.php:163
 msgid "Error return code: %1$s, message: %2$s"
-msgstr ""
+msgstr "錯誤代碼: %1$s, 錯誤訊息: %2$s"
 
 #: wc-payment-gateway-line-pay.php:45
 msgid "LINE Pay Gateway plugin requires WooCommerce to be activated."
-msgstr ""
+msgstr "本外掛需要先啟用 WooCommerce 之後再啟用！"
 
 #. Plugin Name of the plugin/theme
 msgid "LINE Pay Gateway for WooCommerce"
-msgstr ""
+msgstr "LINE Pay Gateway for WooCommerce"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wordpress.org/plugins/wc-payment-gateway-line-pay/"
-msgstr ""
+msgstr "https://wordpress.org/plugins/wc-payment-gateway-line-pay/"
 
 #. Description of the plugin/theme
 msgid "Accept LINE Pay mobile payments on your WooCommerce powered store!"
-msgstr ""
+msgstr "讓 WooCommerce 可以支援使用 LINE Pay 進行結帳！"
 
 #. Author of the plugin/theme
 msgid "Denny Tsai"
-msgstr ""
+msgstr "Denny Tsai"
 
 #. Author URI of the plugin/theme
 msgid "http://hpd.io/"
-msgstr ""
+msgstr "http://hpd.io/"
