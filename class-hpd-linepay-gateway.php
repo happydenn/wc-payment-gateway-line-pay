@@ -18,6 +18,7 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
 
         $this->enabled = $this->get_option( 'enabled' );
         $this->title = $this->get_option( 'title' );
+        $this->description = $this->get_option( 'description' );
         $this->channel_id = $this->get_option( 'channelId' );
         $this->channel_secret = $this->get_option( 'channelSecret' );
         $this->sandbox_mode = ( $this->get_option( 'sandboxMode' ) === 'yes' ) ? true : false;
@@ -49,6 +50,12 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
             'title' => array(
                 'title' => __( 'Title', 'wc-payment-gateway-line-pay' ),
                 'default' => 'LINE Pay',
+            ),
+            'description' => array(
+            'title' => __( 'Description', 'wc-payment-gateway-line-pay' ),
+            'type' => 'textarea',
+            'description' => '',
+            'default' => __( 'Checkout by LINE on PC or Mobile Device', 'wc-payment-gateway-line-pay' ),
             ),
             'channelId' => array(
                 'title' => __( 'Channel ID', 'wc-payment-gateway-line-pay' ),
