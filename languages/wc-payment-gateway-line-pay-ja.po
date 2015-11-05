@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-payment-"
+"gateway-line-pay\n"
+"POT-Creation-Date: 2015-10-30 23:21:51+00:00\n"
+"PO-Revision-Date: Tue Nov 03 2015 15:36:10 GMT+0900 (JST)\n"
+"Last-Translator: Kay <kay.lin@me.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ja_JP\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: class-hpd-linepay-gateway.php:12
+msgid "LINE Pay"
+msgstr "LINE Pay\n"
+
+#: class-hpd-linepay-gateway.php:13
+msgid "Accept payments using LINE Pay."
+msgstr "LINE Payで決済"
+
+#: class-hpd-linepay-gateway.php:46
+msgid "Enable"
+msgstr "有効化"
+
+#: class-hpd-linepay-gateway.php:50
+msgid "Title"
+msgstr "タイトル"
+
+#: class-hpd-linepay-gateway.php:54
+msgid "Channel ID"
+msgstr "チャンネル ID (Channel ID)"
+
+#: class-hpd-linepay-gateway.php:57
+msgid "Channel Secret Key"
+msgstr "チャンネル・シークレット鍵 (Channel Secret Key)"
+
+#: class-hpd-linepay-gateway.php:60
+msgid "Run in Sandbox mode"
+msgstr "サンドボックス・モード (Sandbox Mode)"
+
+#: class-hpd-linepay-gateway.php:64
+msgid "Product Image URL"
+msgstr "LINE決済の時画像のURL"
+
+#: class-hpd-linepay-gateway.php:65
+msgid ""
+"URL to the image that is shown on LINE Pay payment interface. (Best size: "
+"84x84)"
+msgstr "LINE決済インターフェースに表示したい画像のURLを入力します(84x84)"
+
+#: class-hpd-linepay-gateway.php:68
+msgid "Payment UI Language"
+msgstr "決済UIの言語"
+
+#: class-hpd-linepay-gateway.php:69
+msgid "Language used in the LINE Pay payment interface."
+msgstr "LINE決済時の言語"
+
+#: class-hpd-linepay-gateway.php:72
+msgid "Auto detect"
+msgstr "自動検出"
+
+#: class-hpd-linepay-gateway.php:73
+msgid "Traditional Chinese (Taiwan)"
+msgstr "台湾華語"
+
+#: class-hpd-linepay-gateway.php:74
+msgid "Simplified Chinese"
+msgstr "中国語"
+
+#: class-hpd-linepay-gateway.php:75
+msgid "Japanese"
+msgstr "日本語"
+
+#: class-hpd-linepay-gateway.php:76
+msgid "English"
+msgstr "英語"
+
+#: class-hpd-linepay-gateway.php:77
+msgid "Korean"
+msgstr "韓国語"
+
+#: class-hpd-linepay-gateway.php:78
+msgid "Thai"
+msgstr "タイ語"
+
+#: class-hpd-linepay-gateway.php:90
+msgid "You cannot use this currency with LINE Pay."
+msgstr "現在この通貨は使用できません。"
+
+#: class-hpd-linepay-gateway.php:105
+#, c-format
+msgid " and %s others"
+msgstr "及び %s その他"
+
+#: class-hpd-linepay-gateway.php:123
+#, c-format
+msgid ""
+"Incorrect parameters were passed during checkout. Please contact site "
+"administrator. Return code: %s"
+msgstr "チェクアウトされる際、エラーが発生しました。エラーリターン コードは %s"
+
+#: class-hpd-linepay-gateway.php:163
+#, c-format
+msgid "Error return code: %1$s, message: %2$s"
+msgstr "エラーリターン コード"
+
+#: wc-payment-gateway-line-pay.php:45
+msgid "LINE Pay Gateway plugin requires WooCommerce to be activated."
+msgstr "LINE Pay ゲートウェイはWooCommerceを有効化することが必要です"
+
+#. Plugin Name of the plugin/theme
+msgid "LINE Pay Gateway for WooCommerce"
+msgstr "LINE Pay ゲートウェイ (WooCommerceのため)"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wc-payment-gateway-line-pay/"
+msgstr "https://wordpress.org/plugins/wc-payment-gateway-line-pay/"
+
+#. Description of the plugin/theme
+msgid "Accept LINE Pay mobile payments on your WooCommerce powered store!"
+msgstr "LINE Payでの決済を許可する"
+
+#. Author of the plugin/theme
+msgid "Denny Tsai"
+msgstr "Denny Tsai"
+
+#. Author URI of the plugin/theme
+msgid "http://hpd.io/"
+msgstr "http://hpd.io/"

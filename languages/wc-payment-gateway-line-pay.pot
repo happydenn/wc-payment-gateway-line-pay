@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the LINE Pay Gateway for WooCommerce package.
 msgid ""
 msgstr ""
-"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.3.5\n"
+"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-payment-"
 "gateway-line-pay\n"
-"POT-Creation-Date: 2015-10-30 23:21:51+00:00\n"
+"POT-Creation-Date: 2015-11-05 05:40:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,87 +21,95 @@ msgstr ""
 msgid "Accept payments using LINE Pay."
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:46
+#: class-hpd-linepay-gateway.php:50
 msgid "Enable"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:50
+#: class-hpd-linepay-gateway.php:54
 msgid "Title"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:54
+#: class-hpd-linepay-gateway.php:58
 msgid "Channel ID"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:57
+#: class-hpd-linepay-gateway.php:61
 msgid "Channel Secret Key"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:60
+#: class-hpd-linepay-gateway.php:64
 msgid "Run in Sandbox mode"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:64
+#: class-hpd-linepay-gateway.php:68
 msgid "Product Image URL"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:65
+#: class-hpd-linepay-gateway.php:69
 msgid ""
 "URL to the image that is shown on LINE Pay payment interface. (Best size: "
 "84x84)"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:68
-msgid "Payment UI Language"
-msgstr ""
-
-#: class-hpd-linepay-gateway.php:69
-msgid "Language used in the LINE Pay payment interface."
-msgstr ""
-
 #: class-hpd-linepay-gateway.php:72
-msgid "Auto detect"
+msgid "Custom payment icon URL"
 msgstr ""
 
 #: class-hpd-linepay-gateway.php:73
-msgid "Traditional Chinese (Taiwan)"
-msgstr ""
-
-#: class-hpd-linepay-gateway.php:74
-msgid "Simplified Chinese"
-msgstr ""
-
-#: class-hpd-linepay-gateway.php:75
-msgid "Japanese"
+msgid "URL to the image that is shown on checkout page."
 msgstr ""
 
 #: class-hpd-linepay-gateway.php:76
-msgid "English"
+msgid "Payment UI Language"
 msgstr ""
 
 #: class-hpd-linepay-gateway.php:77
+msgid "Language used in the LINE Pay payment interface."
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:80
+msgid "Auto detect"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:81
+msgid "Traditional Chinese (Taiwan)"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:82
+msgid "Simplified Chinese"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:83
+msgid "Japanese"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:84
+msgid "English"
+msgstr ""
+
+#: class-hpd-linepay-gateway.php:85
 msgid "Korean"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:78
+#: class-hpd-linepay-gateway.php:86
 msgid "Thai"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:90
+#: class-hpd-linepay-gateway.php:98
 msgid "You cannot use this currency with LINE Pay."
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:105
+#: class-hpd-linepay-gateway.php:113
 msgid " and %s others"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:123
+#: class-hpd-linepay-gateway.php:131
 msgid ""
 "Incorrect parameters were passed during checkout. Please contact site "
 "administrator. Return code: %s"
 msgstr ""
 
-#: class-hpd-linepay-gateway.php:163
+#: class-hpd-linepay-gateway.php:171
 msgid "Error return code: %1$s, message: %2$s"
 msgstr ""
 
