@@ -3,7 +3,7 @@
  * Plugin Name: LINE Pay Gateway for WooCommerce
  * Plugin URI: https://wordpress.org/plugins/wc-payment-gateway-line-pay/
  * Description: Accept LINE Pay mobile payments on your WooCommerce powered store!
- * Version: 0.4.0
+ * Version: 0.4.1
  * Author: Denny Tsai
  * Author URI: http://hpd.io/
  * License: GPLv3
