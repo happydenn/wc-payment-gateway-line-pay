@@ -56,10 +56,9 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
                 'default' => 'LINE Pay',
             ),
             'description' => array(
-            'title' => __( 'Description', 'wc-payment-gateway-line-pay' ),
-            'type' => 'textarea',
-            'description' => '',
-            'default' => __( 'Checkout by LINE on PC or Mobile Device', 'wc-payment-gateway-line-pay' ),
+                'title' => __( 'Description', 'wc-payment-gateway-line-pay' ),
+                'type' => 'textarea',
+                'default' => __( 'Make your payment via LINE Pay on PC or mobile device.', 'wc-payment-gateway-line-pay' ),
             ),
             'channelId' => array(
                 'title' => __( 'Channel ID', 'wc-payment-gateway-line-pay' ),
