@@ -2,11 +2,11 @@
 # This file is distributed under the same license as the LINE Pay Gateway for WooCommerce package.
 msgid ""
 msgstr ""
-"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.4.1\n"
+"Project-Id-Version: LINE Pay Gateway for WooCommerce 0.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-payment-"
 "gateway-line-pay\n"
-"POT-Creation-Date: 2015-11-05 13:41+0800\n"
-"PO-Revision-Date: 2015-11-05 13:43+0800\n"
+"POT-Creation-Date: 2015-11-05 14:04+0800\n"
+"PO-Revision-Date: 2015-11-05 14:04+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -24,95 +24,103 @@ msgstr "LINE Pay"
 msgid "Accept payments using LINE Pay."
 msgstr "使用 LINE Pay 進行付款"
 
-#: class-hpd-linepay-gateway.php:50
+#: class-hpd-linepay-gateway.php:51
 msgid "Enable"
 msgstr "啟用"
 
-#: class-hpd-linepay-gateway.php:54
+#: class-hpd-linepay-gateway.php:55
 msgid "Title"
 msgstr "標題"
 
-#: class-hpd-linepay-gateway.php:58
+#: class-hpd-linepay-gateway.php:59
+msgid "Description"
+msgstr "描述"
+
+#: class-hpd-linepay-gateway.php:61
+msgid "Make your payment via LINE Pay on PC or mobile device."
+msgstr "顯示於付款方式下方的描述"
+
+#: class-hpd-linepay-gateway.php:64
 msgid "Channel ID"
 msgstr "Channel ID"
 
-#: class-hpd-linepay-gateway.php:61
+#: class-hpd-linepay-gateway.php:67
 msgid "Channel Secret Key"
 msgstr "Channel Secret Key"
 
-#: class-hpd-linepay-gateway.php:64
+#: class-hpd-linepay-gateway.php:70
 msgid "Run in Sandbox mode"
 msgstr "使用Sandbox模式"
 
-#: class-hpd-linepay-gateway.php:68
+#: class-hpd-linepay-gateway.php:74
 msgid "Product Image URL"
 msgstr "結帳圖檔網址"
 
-#: class-hpd-linepay-gateway.php:69
+#: class-hpd-linepay-gateway.php:75
 msgid ""
 "URL to the image that is shown on LINE Pay payment interface. (Best size: "
 "84x84)"
 msgstr "顯示於付款畫面上的影像 URL (建議大小 84x84)"
 
-#: class-hpd-linepay-gateway.php:72
+#: class-hpd-linepay-gateway.php:78
 msgid "Custom payment icon URL"
 msgstr "自定付款方式圖檔網址"
 
-#: class-hpd-linepay-gateway.php:73
+#: class-hpd-linepay-gateway.php:79
 msgid "URL to the image that is shown on checkout page."
 msgstr "顯示於付款方式旁邊的圖示網址"
 
-#: class-hpd-linepay-gateway.php:76
+#: class-hpd-linepay-gateway.php:82
 msgid "Payment UI Language"
 msgstr "付款頁面語言"
 
-#: class-hpd-linepay-gateway.php:77
+#: class-hpd-linepay-gateway.php:83
 msgid "Language used in the LINE Pay payment interface."
 msgstr "LINE Pay等待付款頁面的語言"
 
-#: class-hpd-linepay-gateway.php:80
+#: class-hpd-linepay-gateway.php:86
 msgid "Auto detect"
 msgstr "自動選擇"
 
-#: class-hpd-linepay-gateway.php:81
+#: class-hpd-linepay-gateway.php:87
 msgid "Traditional Chinese (Taiwan)"
 msgstr "繁體中文"
 
-#: class-hpd-linepay-gateway.php:82
+#: class-hpd-linepay-gateway.php:88
 msgid "Simplified Chinese"
 msgstr "簡體中文"
 
-#: class-hpd-linepay-gateway.php:83
+#: class-hpd-linepay-gateway.php:89
 msgid "Japanese"
 msgstr "日文"
 
-#: class-hpd-linepay-gateway.php:84
+#: class-hpd-linepay-gateway.php:90
 msgid "English"
 msgstr "英文"
 
-#: class-hpd-linepay-gateway.php:85
+#: class-hpd-linepay-gateway.php:91
 msgid "Korean"
 msgstr "韓文"
 
-#: class-hpd-linepay-gateway.php:86
+#: class-hpd-linepay-gateway.php:92
 msgid "Thai"
 msgstr "泰文"
 
-#: class-hpd-linepay-gateway.php:98
+#: class-hpd-linepay-gateway.php:104
 msgid "You cannot use this currency with LINE Pay."
 msgstr "LINE Pay並不接受目前所使用的幣值。"
 
-#: class-hpd-linepay-gateway.php:113
+#: class-hpd-linepay-gateway.php:119
 msgid " and %s others"
 msgstr " 和另外 %s 件商品"
 
-#: class-hpd-linepay-gateway.php:131
+#: class-hpd-linepay-gateway.php:137
 msgid ""
 "Incorrect parameters were passed during checkout. Please contact site "
 "administrator. Return code: %s"
 msgstr "結帳參數有誤，請聯絡網站管理員。錯誤代碼: %s"
 
-#: class-hpd-linepay-gateway.php:171
+#: class-hpd-linepay-gateway.php:177
 msgid "Error return code: %1$s, message: %2$s"
 msgstr "錯誤代碼: %1$s, 錯誤訊息: %2$s"
 
