@@ -7,7 +7,7 @@ require_once( dirname( __FILE__ ) . '/class-hpd-linepay-client.php' );
 class HPD_LinePay_Gateway extends WC_Payment_Gateway {
     public function __construct() {
         $this->id = 'hpd_linepay';
-        $this->icon = plugin_dir_url( __FILE__ ) . 'assets/linepay_logo_74x24.png';
+        $this->icon = plugin_dir_url( __FILE__ ) . 'assets/linepay_logo_new.png';
         $this->has_fields = false;
         $this->method_title = __( 'LINE Pay', 'wc-payment-gateway-line-pay' );
         $this->method_description = __( 'Accept payments using LINE Pay.', 'wc-payment-gateway-line-pay' );
@@ -21,6 +21,10 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
         $this->channel_id = $this->get_option( 'channelId' );
         $this->channel_secret = $this->get_option( 'channelSecret' );
         $this->sandbox_mode = ( $this->get_option( 'sandboxMode' ) === 'yes' ) ? true : false;
+
+        if ( $this->get_option( 'iconUrl' ) !== '' ) {
+            $this->icon = $this->get_option( 'iconUrl' );
+        }
 
         $product_image_url = $this->get_option( 'productImageUrl' );
 
@@ -63,6 +67,10 @@ class HPD_LinePay_Gateway extends WC_Payment_Gateway {
             'productImageUrl' => array(
                 'title' => __( 'Product Image URL', 'wc-payment-gateway-line-pay' ),
                 'description' => __( 'URL to the image that is shown on LINE Pay payment interface. (Best size: 84x84)', 'wc-payment-gateway-line-pay' ),
+            ),
+            'iconUrl' => array(
+                'title' => __( 'Custom payment icon URL', 'wc-payment-gateway-line-pay' ),
+                'description' => __( 'URL to the image that is shown on checkout page.', 'wc-payment-gateway-line-pay' ),
             ),
             'langCd' => array(
                 'title' => __( 'Payment UI Language', 'wc-payment-gateway-line-pay' ),
