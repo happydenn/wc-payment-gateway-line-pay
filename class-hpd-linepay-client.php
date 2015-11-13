@@ -54,10 +54,11 @@ class HPD_LinePay_Client {
     protected function send_request( $endpoint, $postdata ) {
         $r = wp_remote_post( $this->get_api_root_url() . $endpoint, array(
             'headers' => array(
-                'Content-type' => 'application/json',
+                'Content-type' => 'application/json; charset=UTF-8',
                 'X-LINE-ChannelId' => $this->channel_id,
                 'X-LINE-ChannelSecret' => $this->channel_secret,
             ),
+            'httpversion' => '1.1',
             'body' => json_encode( $postdata ),
             'timeout' => 30,
         ) );

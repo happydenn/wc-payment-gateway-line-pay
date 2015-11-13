@@ -4,7 +4,7 @@ Donate link:
 Tags: woocommerce, payment, ecommerce, mobile-payment, line-pay
 Requires at least: 4.0
 Tested up to: 4.3.1
-Stable tag: 0.4.2
+Stable tag: 0.4.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -79,10 +79,15 @@ the service.
 
 == Changelog ==
 
+= 0.4.3 =
+* Fixed http request client not setting encoding to UTF-8 was causing problems
+for some people.
+
 = 0.4.2 =
 * Added an option to change the payment method icon.
 * Added Japanese translation contributed by Kay Lin.
-* Fixed default payment icon to match LINE Pay's standard. (In Traditional Chinese)
+* Fixed default payment icon to match LINE Pay's standard. (In Traditional
+Chinese)
 
 = 0.4.0 =
 * Make the plugin i18n capable.
